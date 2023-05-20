@@ -1,2 +1,2 @@
 # Socket-Communication-App
-App like whatsapp using sockets(Inter Process Communication)
+App like whatsapp by using sockets
