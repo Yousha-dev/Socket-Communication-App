@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>menupage</class>
+ <widget class="QDialog" name="menupage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>880</width>
+    <height>545</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">*{
+	font-family: century gothic;
+}
+QFrame
+{
+	color: rgb(255, 255, 255);
+	background-color: rgb(51, 51, 51);
+	border-radius: 15px;
+}
+#Form {
+	background-image: url(:/new/prefix1/loginBackground.jfif);
+}
+QLabel#label
+{
+	font: 700 24pt &quot;Century Gothic&quot;;
+}
+QLabel#label_2
+{
+	font: 8pt &quot;Century Gothic&quot;;
+}
+QLabel#label_3
+{
+	font: 700 9pt &quot;Century Gothic&quot;;
+}
+QLabel
+{
+	background: transparent;
+}
+QLineEdit
+{
+	background: transparent;
+	border: none;
+	font: 12pt &quot;Century Gothic&quot;;
+	border-bottom: 1px solid #717072;
+	color: rgb(255, 255, 255);
+}
+QPushButton
+{
+	color: rgb(255, 255, 255);
+	background-color: rgb(170, 0, 255);
+	border-radius: 10px;
+}
+QPushButton:Hover
+{
+	color: rgb(255, 255, 255);
+	background-color: rgb(148, 0, 222);
+}
+QPushButton#forgotPasswordButton
+{
+	font: 700 8pt &quot;Century Gothic&quot;;
+	border: 1px solid rgb(255, 0, 0);
+	color: rgb(255, 255, 255);
+	background-color: rgb(51, 51, 51);
+}
+QPushButton#forgotPasswordButton:Hover
+{
+	color: rgb(255, 255, 255);
+	background-color: rgb(255, 0, 0);
+}
+QCommandLinkButton
+{
+	color: rgb(255, 255, 255);
+	font: 700 8pt &quot;Century Gothic&quot;;
+}
+QRadioButton
+{
+	color: rgb(255, 255, 255);
+	font: 10pt &quot;Century Gothic&quot;;
+}
+QMessageBox
+{
+	background-color: rgb(51, 51, 51);
+}
+QMessageBox QLabel
+{
+	border: 0;
+	border-radius: 6px;
+	font-size: 10px;
+	font-weight: bold;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+QMessageBox QPushButton
+{
+	font: 9pt &quot;Century Gothic&quot;;
+}</string>
+  </property>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>80</y>
+     <width>411</width>
+     <height>371</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>50</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Menu</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>110</y>
+      <width>231</width>
+      <height>181</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QPushButton" name="contactListButton">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string>Contacts</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="backtToLoginButton">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string>Logout</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="quitButton">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string>Quit</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QPushButton" name="infoButton">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>310</y>
+      <width>61</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>About</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

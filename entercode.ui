@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>entercode</class>
+ <widget class="QDialog" name="entercode">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>793</width>
+    <height>449</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">*{
+	font-family: century gothic;
+}
+QFrame
+{
+	color: rgb(255, 255, 255);
+	background-color: rgb(51, 51, 51);
+	border-radius: 15px;
+}
+#Form {
+	background-image: url(:/new/prefix1/loginBackground.jfif);
+}
+QLabel#label
+{
+	font: 700 24pt &quot;Century Gothic&quot;;
+}
+QLabel#label_2
+{
+	font: 8pt &quot;Century Gothic&quot;;
+}
+QLabel#label_3
+{
+	font: 700 9pt &quot;Century Gothic&quot;;
+}
+QLabel
+{
+	background: transparent;
+}
+QLineEdit
+{
+	background: transparent;
+	border: none;
+	font: 12pt &quot;Century Gothic&quot;;
+	border-bottom: 1px solid #717072;
+	color: rgb(255, 255, 255);
+}
+QPushButton
+{
+	color: rgb(255, 255, 255);
+	background-color: rgb(170, 0, 255);
+	border-radius: 10px;
+}
+QPushButton:Hover
+{
+	color: rgb(255, 255, 255);
+	background-color: rgb(148, 0, 222);
+}
+QPushButton#forgotPasswordButton
+{
+	font: 700 8pt &quot;Century Gothic&quot;;
+	border: 1px solid rgb(255, 0, 0);
+	color: rgb(255, 255, 255);
+	background-color: rgb(51, 51, 51);
+}
+QPushButton#forgotPasswordButton:Hover
+{
+	color: rgb(255, 255, 255);
+	background-color: rgb(255, 0, 0);
+}
+QCommandLinkButton
+{
+	color: rgb(255, 255, 255);
+	font: 700 8pt &quot;Century Gothic&quot;;
+}
+QRadioButton
+{
+	color: rgb(255, 255, 255);
+	font: 10pt &quot;Century Gothic&quot;;
+}
+QMessageBox
+{
+	background-color: rgb(51, 51, 51);
+}
+QMessageBox QLabel
+{
+	border: 0;
+	border-radius: 6px;
+	font-size: 10px;
+	font-weight: bold;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+QMessageBox QPushButton
+{
+	font: 9pt &quot;Century Gothic&quot;;
+}</string>
+  </property>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>90</y>
+     <width>301</width>
+     <height>231</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QPushButton" name="enterCodeButton">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>160</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="text">
+     <string>OK</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_code">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>90</y>
+      <width>241</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="Ignored">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="placeholderText">
+     <string>Enter Code</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="textEdit">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>30</y>
+      <width>241</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+    <property name="html">
+     <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'century gothic'; font-size:11pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Century Gothic'; font-size:10pt;&quot;&gt;A code has been sent to your email&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="resendCodeButton">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>160</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Resend</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
